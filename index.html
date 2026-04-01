@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mind Twist - Daily Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🧠 Mind Twist</h1>
+    <h2>Daily Puzzle</h2>
+
+    <div class="puzzle-box">
+        <p id="question">2 → 6 → 7 → 21 → 22 → ?</p>
+
+        <div class="options">
+            <button onclick="checkAnswer(0)" class="answer-btn">44</button>
+            <button onclick="checkAnswer(1)" class="answer-btn">66</button>
+            <button onclick="checkAnswer(2)" class="answer-btn">23</button>
+            <button onclick="checkAnswer(3)" class="answer-btn">46</button>
+        </div>
+
+        <p id="result"></p>
+        
+        <button id="nextBtn" onclick="nextPuzzle()" style="display: none;">Next Puzzle →</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
